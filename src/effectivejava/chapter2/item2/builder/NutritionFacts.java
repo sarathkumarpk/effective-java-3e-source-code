@@ -1,5 +1,7 @@
 package effectivejava.chapter2.item2.builder;
 
+import java.util.concurrent.Semaphore;
+
 // Builder Pattern  (Page 13)
 public class NutritionFacts {
     private final int servingSize;
@@ -8,6 +10,7 @@ public class NutritionFacts {
     private final int fat;
     private final int sodium;
     private final int carbohydrate;
+    private  Semaphore semaphore;
 
     public static class Builder {
         // Required parameters
